@@ -18,6 +18,14 @@
 
 ## Formatting Conventions
 
+### File Structure
+Create one file per chapter/act in `Drafts/`, numbered for sort order:
+- `01-chapter-title.md`
+- `02-chapter-title.md`
+- etc.
+
+Never combine multiple chapters or acts into a single file.
+
 ### Scene Breaks
 Use `---` (horizontal rule) for scene breaks within a chapter/act
 

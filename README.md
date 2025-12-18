@@ -23,7 +23,7 @@ your-story/
 ├── Setting/
 │   └── world.md           # Locations, time period, world rules
 ├── Drafts/
-│   └── (your story files) # Numbered for sort order: 01-chapter-one.md
+│   └── (your story files) # One file per chapter/act, numbered: 01-chapter-one.md
 ├── Notes/
 │   ├── style-guide.md     # Voice, tone, formatting conventions
 │   └── editing-markup.md  # How to leave inline edit notes
