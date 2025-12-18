@@ -38,9 +38,13 @@ your-story/
 2. Develop your plot structure in `Plot/outline.md`
 3. Define themes and motifs in `Themes/themes.md`
 4. Build your world in `Setting/world.md`
+5. Establish voice and conventions in `Notes/style-guide.md`
+6. **Review and approve** all planning docs before moving to drafting
+
+These planning documents are the **source of truth** for your story. Complete them first.
 
 ### Writing Phase
-1. Create numbered files in `Drafts/`: `01-title.md`, `02-title.md`, etc.
+1. Create one file per chapter/act in `Drafts/`: `01-title.md`, `02-title.md`, etc.
 2. Commit regularly with descriptive messages
 3. Use `git tag` to mark milestones: `git tag v1-first-draft`
 
