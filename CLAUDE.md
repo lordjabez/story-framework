@@ -7,6 +7,9 @@ This is a creative writing framework. Read and follow the instructions in these 
 1. `.ai-instructions.md` - Your role and workflow as a writing assistant
 2. `Notes/style-guide.md` - Voice, tone, and formatting rules for this project
 3. `Notes/editing-markup.md` - How to process `{{...}}` edit markers
+4. `creative-approaches.md` - Six collaboration modes (Author, Muse, Artisan, Debater, Creator, Curator)
+
+When a user says "I want to work in [X] mode" (e.g., "Curator mode", "Author mode"), read `creative-approaches.md` and follow the behaviors defined for that approach.
 
 ## Framework Structure
 

@@ -59,6 +59,23 @@ These planning documents are the **source of truth** for your story. Complete th
 2. Copy approved files to `Final/`
 3. Tag the release: `git tag v1-final`
 
+## Creative Collaboration Approaches
+
+The file `creative-approaches.md` defines six distinct modes for human-AI creative collaboration, ordered by degree of human control:
+
+| Approach | AI Role | Best For |
+|----------|---------|----------|
+| **Author** | Critic only | Getting feedback without AI-generated content |
+| **Muse** | Pure executor | Precise control over every detail |
+| **Artisan** | Scaffolder | Structure and outlines, you write prose |
+| **Debater** | Adversary | Stress-testing creative choices |
+| **Creator** | Generative partner | Iterative drafting with AI assistance |
+| **Curator** | Option generator | Exploring many possibilities quickly |
+
+**To use:** Tell the AI which mode you want—"Let's work in Author mode" or "Curator mode: give me options." You can switch modes mid-session.
+
+See `creative-approaches.md` for full details on each approach's behaviors and sample prompts.
+
 ## Working with AI Assistants
 
 This framework is designed for collaborative writing with AI. The AI can:
