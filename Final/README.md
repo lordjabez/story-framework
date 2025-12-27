@@ -6,7 +6,8 @@ This folder contains approved, finalized files ready for publication or distribu
 
 Before moving a file here, confirm:
 
-- [ ] All edit notes (`{{...}}`) removed
+- [ ] All edit notes (`{{...}}`) processed and removed
+- [ ] All author notes (`[[...]]`) removed
 - [ ] Continuity verified across all sections
 - [ ] Line-level proofread complete
 - [ ] Character names consistent throughout

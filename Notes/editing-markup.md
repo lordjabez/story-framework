@@ -1,10 +1,108 @@
 # Editing Markup Reference
 
-This document defines inline markup for editing notes. Add these directly in your draft files while reading. When ready, ask your AI assistant to "process edit notes" or "revise based on markup."
+This document defines inline markup for drafts. There are two types:
+
+| Syntax | Name | Purpose | When Removed |
+|--------|------|---------|--------------|
+| `{{...}}` | Edit notes | Revision instructions | After processing |
+| `[[...]]` | Author notes | Context for AI/author | At finalization |
 
 ---
 
-## Markup Syntax
+## Author Notes `[[ ]]`
+
+Author notes provide context, metadata, and reminders. They travel with the draft and are only removed when producing final text.
+
+### Basic Syntax
+
+```markdown
+[[any note or reminder]]
+[[TYPE: structured information]]
+```
+
+**Multiline notes** are supported—useful for chapter headers or complex context:
+
+```markdown
+[[
+POV: Sarah, close third
+TIMELINE: Tuesday morning, Day 3
+MOOD: cautious optimism, underlying tension
+THREADS: job interview, reconciliation with mother
+NOTE: This chapter mirrors the structure of chapter 2
+]]
+```
+
+You can also use multiline for longer notes:
+
+```markdown
+[[CONTEXT:
+Reader knows: Sarah got the job, she's hiding it from Mom
+Reader doesn't know: The company is failing, Marcus warned her
+Dramatic irony: Mom is about to announce she's selling the house
+]]
+```
+
+### Common Types
+
+| Type | Purpose | Example |
+|------|---------|---------|
+| `[[POV: ...]]` | Point of view character | `[[POV: Sarah, close third]]` |
+| `[[TIMELINE: ...]]` | When this happens | `[[TIMELINE: Day 3, morning, ~2 hours since ch 4]]` |
+| `[[MOOD: ...]]` | Emotional tone/atmosphere | `[[MOOD: tense, building dread]]` |
+| `[[THREADS: ...]]` | Active plot threads here | `[[THREADS: romance subplot, missing letter]]` |
+| `[[CONTEXT: ...]]` | What reader knows/doesn't | `[[CONTEXT: reader doesn't know he's lying]]` |
+| `[[TODO: ...]]` | Reminder for later | `[[TODO: plant the key before scene 3]]` |
+| `[[RESEARCH: ...]]` | Needs fact-checking | `[[RESEARCH: verify hospital procedure]]` |
+| `[[NOTE: ...]]` | General note | `[[NOTE: beta reader loved this section]]` |
+
+### Placement
+
+**Chapter header** (scene-level context):
+```markdown
+[[
+POV: Sarah, close third
+TIMELINE: Tuesday morning, Day 3
+MOOD: cautious optimism, underlying tension
+THREADS: job interview, reconciliation with mother
+]]
+
+# Chapter Five
+
+Sarah checked her reflection one last time...
+```
+
+**Inline** (local context):
+```markdown
+"I never said that," he replied. [[CONTEXT: he's lying, reader should sense it]]
+
+She walked past the old oak tree [[TODO: described differently in ch 2, check]] and up the porch steps.
+```
+
+**Scene breaks**:
+```markdown
+---
+
+[[TIMELINE: 3 hours later, same day]]
+[[MOOD: shift to darker tone]]
+
+The call came at noon.
+```
+
+### For AI Assistants
+
+- **Read** author notes to understand context, but don't act on them like edit notes
+- **Preserve** author notes when revising—never remove them unless producing final text
+- **Reference** them to maintain consistency (POV, timeline, mood, active threads)
+- **Add** new author notes when you introduce details the author should track
+- When searching: `grep -rn "\[\[" Drafts/`
+
+---
+
+## Edit Notes `{{ }}`
+
+Edit notes are revision instructions. Process them when asked, then remove.
+
+### Syntax
 
 All edit notes use double curly braces: `{{comment}}` or `{{TYPE: comment}}`
 

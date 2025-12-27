@@ -15,9 +15,10 @@ When a user says "I want to work in [X] mode" (e.g., "Curator mode", "Author mod
 
 ```
 Characters/   - Character profiles and relationships
-Plot/         - Story structure and scene breakdown
+Plot/         - Story structure, scene breakdown, subplot tracking
 Themes/       - Central themes, motifs, and symbols
 Setting/      - Locations, time period, world rules
+Continuity/   - Timeline and canonical facts for consistency
 Drafts/       - Work in progress (numbered files: 01-title.md, 02-title.md)
 Final/        - Completed work
 Notes/        - Style guide and editing conventions
@@ -29,9 +30,20 @@ Notes/        - Style guide and editing conventions
 - Maintain consistency with planning docs (Characters, Plot, Themes, Setting)
 - Use `---` for scene breaks within chapters
 - Process `{{...}}` edit markers when asked (see editing-markup.md for types)
+- Read `[[...]]` author notes for context; preserve them during revisions
 - Show diffs after making revisions
 - Don't commit unless explicitly asked
 - When unsure about story decisions, ask
+
+## Continuity Management
+
+For novel-length work, actively maintain these files:
+
+- `Continuity/timeline.md` - After writing a scene, log its in-story date/time
+- `Continuity/facts.md` - When introducing details (descriptions, names, places), record them here
+- `Plot/threads.md` - Track planted foreshadowing, subplot status, and payoffs
+
+Before writing new scenes, check these files for established facts. Flag any inconsistencies you notice.
 
 ## Common Commands
 

@@ -17,11 +17,15 @@ your-story/
 ├── Characters/
 │   └── characters.md      # Character profiles and relationships
 ├── Plot/
-│   └── outline.md         # Story structure and scene breakdown
+│   ├── outline.md         # Story structure and scene breakdown
+│   └── threads.md         # Subplots, foreshadowing, payoffs
 ├── Themes/
 │   └── themes.md          # Central themes, motifs, and symbols
 ├── Setting/
 │   └── world.md           # Locations, time period, world rules
+├── Continuity/
+│   ├── timeline.md        # Scene-by-scene chronology
+│   └── facts.md           # Canonical details (names, descriptions, etc.)
 ├── Drafts/
 │   └── (your story files) # One file per chapter/act, numbered: 01-chapter-one.md
 ├── Notes/
@@ -43,6 +47,16 @@ your-story/
 
 These planning documents are the **source of truth** for your story. Complete them first.
 
+### Continuity Tracking (for novel-length work)
+
+As you write, maintain these documents to prevent inconsistencies:
+
+- `Continuity/timeline.md` - Log each scene's date/time as you write it
+- `Continuity/facts.md` - Record canonical details (physical descriptions, addresses, object locations)
+- `Plot/threads.md` - Track subplots, foreshadowing, and payoffs
+
+Update these incrementally—don't wait until revision. The AI assistant will reference them to maintain consistency.
+
 ### Writing Phase
 1. Create one file per chapter/act in `Drafts/`: `01-title.md`, `02-title.md`, etc.
 2. Commit regularly with descriptive messages
@@ -53,6 +67,20 @@ These planning documents are the **source of truth** for your story. Complete th
 2. Ask your AI assistant to "process edit notes"
 3. Review and approve changes
 4. Commit after each revision pass
+
+### Inline Markup
+
+Two markup types keep notes in your drafts:
+
+| Syntax | Purpose | Example |
+|--------|---------|---------|
+| `[[...]]` | Author notes (context for AI) | `[[POV: Sarah]] [[TIMELINE: Day 3]]` |
+| `{{...}}` | Edit notes (revision instructions) | `{{FIX: wrong name}} {{EXPAND: more detail}}` |
+
+- **Author notes** stay in the draft until finalization—use them for POV, timeline, mood, active threads, research notes
+- **Edit notes** are processed and removed during revision
+
+See `Notes/editing-markup.md` for full syntax.
 
 ### Finalization
 1. Follow the checklist in `Final/README.md`
