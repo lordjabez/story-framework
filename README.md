@@ -97,6 +97,37 @@ git tag v1-first-draft
 git checkout -- filename.md
 ```
 
+### Writing Good Commit Messages
+
+Commit messages are your revision history. Focus on **why** you made changes, not just what changed—the diff already shows what. Good commit messages let you:
+
+- Understand your creative decisions months later
+- Find when and why a passage changed
+- Revert to earlier versions with confidence
+
+**Format:**
+```
+Short summary (50 chars or less)
+
+Longer explanation if needed. Describe your reasoning:
+- Why did you cut that scene?
+- What feedback prompted this revision?
+- What problem were you solving?
+```
+
+**Examples:**
+```bash
+# Good - explains the why
+git commit -m "Cut prologue - slowed pacing, info now woven into ch 1"
+git commit -m "Rework Sarah's intro to show competence before vulnerability"
+git commit -m "Add tension to cafe scene per beta reader feedback"
+
+# Less useful - only describes what
+git commit -m "Edited chapter 3"
+git commit -m "Fixed typos"
+git commit -m "Rewrote dialogue"
+```
+
 ## Tips
 
 - Commit often with clear messages
