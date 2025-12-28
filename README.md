@@ -106,7 +106,22 @@ See `creative-approaches.md` for full details on each approach's behaviors and s
 
 ## Working with AI Assistants
 
-This framework is designed for collaborative writing with AI. The AI can:
+This framework is designed for collaborative writing with AI. Configuration files are included for all major AI coding assistants:
+
+| Tool | Configuration File |
+|------|-------------------|
+| Claude Code | `CLAUDE.md` |
+| Gemini CLI | `GEMINI.md` |
+| Kiro | `.kiro/steering/creative-writing.md` |
+| GitHub Copilot | `.github/copilot-instructions.md` |
+| Cursor | `.cursorrules` |
+| Windsurf | `.windsurfrules` |
+| Cline | `.clinerules` |
+| Universal fallback | `AGENTS.md` |
+
+All tool-specific files reference `.ai-instructions.md`, which contains the complete guidance. Edit that file to change behavior across all tools.
+
+The AI can:
 
 - Help develop characters, plot, and themes in the planning docs
 - Write drafts based on your outlines
